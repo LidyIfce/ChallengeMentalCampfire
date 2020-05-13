@@ -35,6 +35,7 @@
 		1966D9F4246C254400D68434 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9F3246C254400D68434 /* VideoModel.swift */; };
 		1966D9F6246C254E00D68434 /* MusicaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9F5246C254E00D68434 /* MusicaModel.swift */; };
 		1966D9F8246C255D00D68434 /* ConfiguracaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9F7246C255D00D68434 /* ConfiguracaoModel.swift */; };
+		1966DA02246C480400D68434 /* Fogueira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1966DA01246C480400D68434 /* Fogueira.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		1966D9F3246C254400D68434 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		1966D9F5246C254E00D68434 /* MusicaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaModel.swift; sourceTree = "<group>"; };
 		1966D9F7246C255D00D68434 /* ConfiguracaoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracaoModel.swift; sourceTree = "<group>"; };
+		1966DA01246C480400D68434 /* Fogueira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fogueira.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		1924EF63246ACD330046050F /* campfire */ = {
 			isa = PBXGroup;
 			children = (
+				1966D9FD246C3F7600D68434 /* musicas */,
 				1924EF64246ACD330046050F /* AppDelegate.swift */,
 				1924EF66246ACD330046050F /* SceneDelegate.swift */,
 				1966D9CC246C1A2100D68434 /* Model */,
@@ -210,6 +213,14 @@
 				1966D9F7246C255D00D68434 /* ConfiguracaoModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1966D9FD246C3F7600D68434 /* musicas */ = {
+			isa = PBXGroup;
+			children = (
+				1966DA01246C480400D68434 /* Fogueira.mp3 */,
+			);
+			path = musicas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +330,7 @@
 				1966D9CE246C1A5700D68434 /* TabBar.storyboard in Resources */,
 				1924EF95246B3A7A0046050F /* Fogueira.storyboard in Resources */,
 				1966D9DA246C1AB100D68434 /* Configuracao.storyboard in Resources */,
+				1966DA02246C480400D68434 /* Fogueira.mp3 in Resources */,
 				1966D9D2246C1A7A00D68434 /* Midia.storyboard in Resources */,
 				1966D9D0246C1A6B00D68434 /* Meditacao.storyboard in Resources */,
 				1966D9D8246C1AA800D68434 /* Musica.storyboard in Resources */,

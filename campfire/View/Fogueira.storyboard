@@ -14,10 +14,37 @@
                     <view key="view" contentMode="scaleToFill" id="MYy-SJ-zWX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dF5-Jm-2ou">
+                                <rect key="frame" x="46.5" y="198" width="321" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="321" id="IUd-iF-BZT"/>
+                                    <constraint firstAttribute="width" secondItem="dF5-Jm-2ou" secondAttribute="height" multiplier="321:260" id="mNg-o1-QLB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCF-fo-zVk">
+                                <rect key="frame" x="46.5" y="538" width="321" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qCF-fo-zVk" firstAttribute="leading" secondItem="dF5-Jm-2ou" secondAttribute="leading" id="5aW-3f-95d"/>
+                            <constraint firstItem="qCF-fo-zVk" firstAttribute="trailing" secondItem="dF5-Jm-2ou" secondAttribute="trailing" id="Hxi-JT-CGj"/>
+                            <constraint firstItem="qCF-fo-zVk" firstAttribute="centerX" secondItem="dF5-Jm-2ou" secondAttribute="centerX" id="JJi-zT-anb"/>
+                            <constraint firstItem="dF5-Jm-2ou" firstAttribute="top" secondItem="0Yo-Ud-7Zb" secondAttribute="top" constant="110" id="X6M-MZ-sHe"/>
+                            <constraint firstItem="dF5-Jm-2ou" firstAttribute="centerX" secondItem="0Yo-Ud-7Zb" secondAttribute="centerX" id="slP-J5-dZD"/>
+                            <constraint firstItem="qCF-fo-zVk" firstAttribute="top" secondItem="dF5-Jm-2ou" secondAttribute="bottom" constant="80" id="ybP-74-lJl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Yo-Ud-7Zb"/>
                     </view>
                     <navigationItem key="navigationItem" id="0zb-BC-kZ7"/>
+                    <connections>
+                        <outlet property="frase" destination="qCF-fo-zVk" id="Zld-BN-i1e"/>
+                        <outlet property="imagem" destination="dF5-Jm-2ou" id="H5H-Jd-ulV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yG0-M4-yyv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,14 +7,37 @@
 //
 
 import UIKit
-
+import AVKit
 class FogueiraViewController: UIViewController {
 
+    @IBOutlet weak var imagem: UIImageView!
+    @IBOutlet weak var frase: UILabel!
+    
+    private var fogueiraModel = FogueiraModel()
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let imageName = UIImage(named: fogueiraModel.imageName){
+            self.imagem.image = imageName
+        }
+        self.frase.text = fogueiraModel.frase
+        
+        fogueiraModel.Player().play()
     }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        fogueiraModel.Player().pause()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fogueiraModel.Player().play()
+    }
+   
+   
+    
+    
     
 
     /*
