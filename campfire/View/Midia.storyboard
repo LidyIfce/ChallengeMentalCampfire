@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N20-yM-mY1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Midia View Controller-->
+        <scene sceneID="y3t-01-OaA">
+            <objects>
+                <viewController id="SkD-0z-wmJ" customClass="MidiaViewController" customModule="campfire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O2h-Ff-iJe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8lb-tN-gSm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BFh-oY-xAC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Urd-Vc-ghH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.91304347826087" y="-411.16071428571428"/>
+        </scene>
+        <!--Midia-->
+        <scene sceneID="fcR-L6-ITn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N20-yM-mY1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Midia" image="music.note.list" catalog="system" id="wZ0-XI-Gg4"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Pg-jg-hr1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SkD-0z-wmJ" kind="relationship" relationship="rootViewController" id="TrR-Ye-g8I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhS-qk-tfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136.23188405797103" y="-411.16071428571428"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+    <resources>
+        <image name="music.note.list" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

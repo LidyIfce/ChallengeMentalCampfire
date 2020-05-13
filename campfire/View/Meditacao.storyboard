@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q7s-it-wgE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meditacao View Controller-->
+        <scene sceneID="anb-SN-eEt">
+            <objects>
+                <viewController id="eos-Lc-WGc" customClass="MeditacaoViewController" customModule="campfire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oeM-Qr-NgR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fqD-1U-pKg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xw5-q6-nyR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuk-29-lSO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="127.90178571428571"/>
+        </scene>
+        <!--Meditação-->
+        <scene sceneID="2vL-HJ-gOV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q7s-it-wgE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meditação" image="staroflife.fill" catalog="system" id="SPj-0G-nvQ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s0q-oa-VKs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eos-Lc-WGc" kind="relationship" relationship="rootViewController" id="AVE-y6-AAZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EtG-T4-f75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+    <resources>
+        <image name="staroflife.fill" catalog="system" width="124" height="128"/>
+    </resources>
+</document>

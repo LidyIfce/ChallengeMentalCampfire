@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="akd-Ve-NTd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fogueira View Controller-->
+        <scene sceneID="H68-H7-F6C">
+            <objects>
+                <viewController id="i2M-Oh-31h" customClass="FogueiraViewController" customModule="campfire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MYy-SJ-zWX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0Yo-Ud-7Zb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0zb-BC-kZ7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yG0-M4-yyv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="-147.32142857142856"/>
+        </scene>
+        <!--Fogueira-->
+        <scene sceneID="UOk-bM-Rvb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="akd-Ve-NTd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fogueira" image="flame.fill" catalog="system" id="qmD-Fb-lod"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9pd-c3-b2p">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i2M-Oh-31h" kind="relationship" relationship="rootViewController" id="Fa2-4T-xEm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbR-2Q-vMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.7971014492753632" y="-147.32142857142856"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+    <resources>
+        <image name="flame.fill" catalog="system" width="109" height="128"/>
+    </resources>
+</document>

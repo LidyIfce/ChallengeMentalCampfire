@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cnb-9K-fbd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Configuracao View Controller-->
+        <scene sceneID="W68-um-lgW">
+            <objects>
+                <viewController id="CpL-Pu-bAr" customClass="ConfiguracaoViewController" customModule="campfire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nfu-iC-chq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dw8-f7-8cX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZNe-Ql-SiW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRg-VR-cBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="77.678571428571431"/>
+        </scene>
+        <!--Configuração-->
+        <scene sceneID="jVu-BV-6Aw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cnb-9K-fbd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Configuração" image="gear" catalog="system" id="OBk-6h-eLp"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WVp-dp-hUz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CpL-Pu-bAr" kind="relationship" relationship="rootViewController" id="d6y-k6-ZV2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHz-GV-TJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+    </resources>
+</document>
