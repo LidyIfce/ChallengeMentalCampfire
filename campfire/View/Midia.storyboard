@@ -23,11 +23,11 @@
             </objects>
             <point key="canvasLocation" x="773.91304347826087" y="-411.16071428571428"/>
         </scene>
-        <!--Midia-->
+        <!--Mídia-->
         <scene sceneID="fcR-L6-ITn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N20-yM-mY1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Midia" image="music.note.list" catalog="system" id="wZ0-XI-Gg4"/>
+                    <tabBarItem key="tabBarItem" title="Mídia" image="music.note.list" catalog="system" id="wZ0-XI-Gg4"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Pg-jg-hr1">

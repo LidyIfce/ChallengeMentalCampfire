@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19135871246D5C900020D6B7 /* Praticar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19135870246D5C900020D6B7 /* Praticar.storyboard */; };
 		1924EF65246ACD330046050F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924EF64246ACD330046050F /* AppDelegate.swift */; };
 		1924EF67246ACD330046050F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924EF66246ACD330046050F /* SceneDelegate.swift */; };
 		1924EF6E246ACD380046050F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1924EF6D246ACD380046050F /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19135870246D5C900020D6B7 /* Praticar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Praticar.storyboard; sourceTree = "<group>"; };
 		1924EF61246ACD330046050F /* campfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1924EF64246ACD330046050F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1924EF66246ACD330046050F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				1966D9D5246C1A9E00D68434 /* Video.storyboard */,
 				1966D9D7246C1AA800D68434 /* Musica.storyboard */,
 				1966D9D9246C1AB100D68434 /* Configuracao.storyboard */,
+				19135870246D5C900020D6B7 /* Praticar.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				1924EF95246B3A7A0046050F /* Fogueira.storyboard in Resources */,
 				1966D9DA246C1AB100D68434 /* Configuracao.storyboard in Resources */,
 				1966DA02246C480400D68434 /* Fogueira.mp3 in Resources */,
+				19135871246D5C900020D6B7 /* Praticar.storyboard in Resources */,
 				1966D9D2246C1A7A00D68434 /* Midia.storyboard in Resources */,
 				1966D9D0246C1A6B00D68434 /* Meditacao.storyboard in Resources */,
 				1966D9D8246C1AA800D68434 /* Musica.storyboard in Resources */,

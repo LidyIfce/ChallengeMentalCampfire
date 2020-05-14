@@ -23,11 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="127.90178571428571"/>
         </scene>
-        <!--Meditação-->
+        <!--Navigation Controller-->
         <scene sceneID="2vL-HJ-gOV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q7s-it-wgE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Meditação" image="staroflife.fill" catalog="system" id="SPj-0G-nvQ"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s0q-oa-VKs">
@@ -45,7 +44,4 @@
         </scene>
     </scenes>
     <color key="tintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
-    <resources>
-        <image name="staroflife.fill" catalog="system" width="124" height="128"/>
-    </resources>
 </document>
