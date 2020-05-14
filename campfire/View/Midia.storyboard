@@ -4,24 +4,78 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Midia View Controller-->
+        <!--Midia-->
         <scene sceneID="y3t-01-OaA">
             <objects>
                 <viewController id="SkD-0z-wmJ" customClass="MidiaViewController" customModule="campfire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O2h-Ff-iJe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ngh-i6-jpH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xg3-hT-eN4">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0Mi-6k-6vn">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rX0-S8-gne">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ngh-i6-jpH" firstAttribute="leading" secondItem="8lb-tN-gSm" secondAttribute="leading" id="Ah1-7O-OIS"/>
+                            <constraint firstItem="8lb-tN-gSm" firstAttribute="bottom" secondItem="Ngh-i6-jpH" secondAttribute="bottom" id="BQ9-78-t4T"/>
+                            <constraint firstItem="8lb-tN-gSm" firstAttribute="trailing" secondItem="Ngh-i6-jpH" secondAttribute="trailing" id="jG2-8U-8hx"/>
+                            <constraint firstItem="Ngh-i6-jpH" firstAttribute="top" secondItem="8lb-tN-gSm" secondAttribute="top" id="vqS-Kq-a2c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8lb-tN-gSm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BFh-oY-xAC"/>
+                    <navigationItem key="navigationItem" title="Midia" id="BFh-oY-xAC"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Ngh-i6-jpH" id="K1e-3A-0tp"/>
+                        <segue destination="O76-2i-9Hk" kind="show" identifier="VideoSegue" id="UqD-yl-RRT"/>
+                        <segue destination="oC4-uq-aoH" kind="show" identifier="MusicaSegue" id="89e-u6-YeS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Urd-Vc-ghH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773.91304347826087" y="-411.16071428571428"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="KOw-8T-xg8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Video" id="O76-2i-9Hk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QGA-Pk-Yxn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8q3-C7-XL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416" y="-542"/>
+        </scene>
+        <!--Musica-->
+        <scene sceneID="R1d-ax-x4D">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Musica" id="oC4-uq-aoH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3pU-oF-zJ8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWA-R7-WZN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="-297"/>
         </scene>
         <!--Mídia-->
         <scene sceneID="fcR-L6-ITn">
@@ -30,9 +84,10 @@
                     <tabBarItem key="tabBarItem" title="Mídia" image="music.note.list" catalog="system" id="wZ0-XI-Gg4"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Pg-jg-hr1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4Pg-jg-hr1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

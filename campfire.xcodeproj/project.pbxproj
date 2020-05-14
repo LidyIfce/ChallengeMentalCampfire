@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		19135871246D5C900020D6B7 /* Praticar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19135870246D5C900020D6B7 /* Praticar.storyboard */; };
+		19135873246D6E070020D6B7 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19135872246D6E070020D6B7 /* CollectionCell.xib */; };
+		19135877246D72ED0020D6B7 /* PraticarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19135876246D72ED0020D6B7 /* PraticarViewController.swift */; };
+		19135879246D82AC0020D6B7 /* PraticarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19135878246D82AC0020D6B7 /* PraticarModel.swift */; };
+		1913587B246D8F840020D6B7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913587A246D8F840020D6B7 /* CollectionViewCell.swift */; };
+		1913587D246DB4DA0020D6B7 /* Respiracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1913587C246DB4DA0020D6B7 /* Respiracao.storyboard */; };
+		1913587F246DB5160020D6B7 /* RespiracaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913587E246DB5160020D6B7 /* RespiracaoViewController.swift */; };
 		1924EF65246ACD330046050F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924EF64246ACD330046050F /* AppDelegate.swift */; };
 		1924EF67246ACD330046050F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924EF66246ACD330046050F /* SceneDelegate.swift */; };
 		1924EF6E246ACD380046050F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1924EF6D246ACD380046050F /* Assets.xcassets */; };
@@ -58,6 +64,12 @@
 
 /* Begin PBXFileReference section */
 		19135870246D5C900020D6B7 /* Praticar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Praticar.storyboard; sourceTree = "<group>"; };
+		19135872246D6E070020D6B7 /* CollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		19135876246D72ED0020D6B7 /* PraticarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraticarViewController.swift; sourceTree = "<group>"; };
+		19135878246D82AC0020D6B7 /* PraticarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraticarModel.swift; sourceTree = "<group>"; };
+		1913587A246D8F840020D6B7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1913587C246DB4DA0020D6B7 /* Respiracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Respiracao.storyboard; sourceTree = "<group>"; };
+		1913587E246DB5160020D6B7 /* RespiracaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespiracaoViewController.swift; sourceTree = "<group>"; };
 		1924EF61246ACD330046050F /* campfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1924EF64246ACD330046050F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1924EF66246ACD330046050F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +198,8 @@
 				1966D9D7246C1AA800D68434 /* Musica.storyboard */,
 				1966D9D9246C1AB100D68434 /* Configuracao.storyboard */,
 				19135870246D5C900020D6B7 /* Praticar.storyboard */,
+				19135872246D6E070020D6B7 /* CollectionCell.xib */,
+				1913587C246DB4DA0020D6B7 /* Respiracao.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +214,9 @@
 				1966D9E7246C248800D68434 /* MusicaViewController.swift */,
 				1966D9E9246C249200D68434 /* VideoViewController.swift */,
 				1966D9DD246C241B00D68434 /* FogueiraViewController.swift */,
+				19135876246D72ED0020D6B7 /* PraticarViewController.swift */,
+				1913587A246D8F840020D6B7 /* CollectionViewCell.swift */,
+				1913587E246DB5160020D6B7 /* RespiracaoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +231,7 @@
 				1966D9F3246C254400D68434 /* VideoModel.swift */,
 				1966D9F5246C254E00D68434 /* MusicaModel.swift */,
 				1966D9F7246C255D00D68434 /* ConfiguracaoModel.swift */,
+				19135878246D82AC0020D6B7 /* PraticarModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,11 +349,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1966D9CE246C1A5700D68434 /* TabBar.storyboard in Resources */,
+				1913587D246DB4DA0020D6B7 /* Respiracao.storyboard in Resources */,
 				1924EF95246B3A7A0046050F /* Fogueira.storyboard in Resources */,
 				1966D9DA246C1AB100D68434 /* Configuracao.storyboard in Resources */,
 				1966DA02246C480400D68434 /* Fogueira.mp3 in Resources */,
 				19135871246D5C900020D6B7 /* Praticar.storyboard in Resources */,
 				1966D9D2246C1A7A00D68434 /* Midia.storyboard in Resources */,
+				19135873246D6E070020D6B7 /* CollectionCell.xib in Resources */,
 				1966D9D0246C1A6B00D68434 /* Meditacao.storyboard in Resources */,
 				1966D9D8246C1AA800D68434 /* Musica.storyboard in Resources */,
 				1966D9D4246C1A8700D68434 /* Dicas.storyboard in Resources */,
@@ -370,17 +390,21 @@
 				1966D9EC246C251800D68434 /* FogueiraModel.swift in Sources */,
 				1966D9EE246C252700D68434 /* MeditacaoModel.swift in Sources */,
 				1966D9F4246C254400D68434 /* VideoModel.swift in Sources */,
+				19135879246D82AC0020D6B7 /* PraticarModel.swift in Sources */,
 				1966D9F8246C255D00D68434 /* ConfiguracaoModel.swift in Sources */,
 				1966D9E2246C245800D68434 /* MidiaViewController.swift in Sources */,
 				1966D9F0246C252F00D68434 /* DicasModel.swift in Sources */,
 				1966D9EA246C249200D68434 /* VideoViewController.swift in Sources */,
 				1924EF67246ACD330046050F /* SceneDelegate.swift in Sources */,
+				1913587B246D8F840020D6B7 /* CollectionViewCell.swift in Sources */,
 				1966D9E6246C247500D68434 /* DicasViewController.swift in Sources */,
 				1966D9F2246C253A00D68434 /* MidiaModel.swift in Sources */,
+				1913587F246DB5160020D6B7 /* RespiracaoViewController.swift in Sources */,
 				1966D9E0246C244300D68434 /* MeditacaoViewController.swift in Sources */,
 				1966D9E4246C246900D68434 /* ConfiguracaoViewController.swift in Sources */,
 				1966D9E8246C248800D68434 /* MusicaViewController.swift in Sources */,
 				1966D9F6246C254E00D68434 /* MusicaModel.swift in Sources */,
+				19135877246D72ED0020D6B7 /* PraticarViewController.swift in Sources */,
 				1966D9DE246C241B00D68434 /* FogueiraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

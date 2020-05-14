@@ -3,25 +3,80 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Praticar-->
         <scene sceneID="R6q-8d-q7o">
             <objects>
-                <viewController id="TuY-5N-V1A" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TSr-6v-Rck">
+                <viewController id="TuY-5N-V1A" customClass="PraticarViewController" customModule="campfire" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="s2Z-IE-c9n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="PSK-UI-F9D"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="OL8-QS-CIb"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Poj-cy-k4K">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="js5-th-xKq">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="t7S-nS-M2x">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="TuY-5N-V1A" id="iRy-Wt-wxq"/>
+                            <outlet property="delegate" destination="TuY-5N-V1A" id="r3m-gF-Qyo"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Praticar" id="OL8-QS-CIb"/>
+                    <connections>
+                        <outlet property="collectionView" destination="s2Z-IE-c9n" id="FGZ-pT-zf6"/>
+                        <segue destination="Drl-ir-pvy" kind="show" identifier="RespiracaoSegue" id="LDP-Pw-Hxk"/>
+                        <segue destination="mNm-Gn-kfL" kind="show" identifier="MeditacaoSegue" id="EJB-Zt-dLg"/>
+                        <segue destination="mbv-Um-fcW" kind="show" identifier="DicasSegue" id="NaQ-Rl-H4N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0s-Pq-Yv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="637.68115942028987" y="-290.625"/>
+        </scene>
+        <!--Respiracao-->
+        <scene sceneID="WC9-cR-VLP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Respiracao" id="Drl-ir-pvy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TFA-iR-gI3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3UO-US-4iV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="-441"/>
+        </scene>
+        <!--Meditacao-->
+        <scene sceneID="wyD-SH-xM0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Meditacao" id="mNm-Gn-kfL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MAS-sx-hgE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9n-Wj-4fo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="-311"/>
+        </scene>
+        <!--Dicas-->
+        <scene sceneID="Qxv-zV-hcd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dicas" id="mbv-Um-fcW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wx2-mc-3Vq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbU-HX-gOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="-191"/>
         </scene>
         <!--Praticar-->
         <scene sceneID="Jnf-mK-Dxp">
@@ -30,9 +85,10 @@
                     <tabBarItem key="tabBarItem" title="Praticar" image="staroflife.fill" catalog="system" id="9Au-wt-nFN"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eqn-ze-WhH">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="eqn-ze-WhH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -44,6 +100,7 @@
             <point key="canvasLocation" x="-272.46376811594206" y="-290.625"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="staroflife.fill" catalog="system" width="124" height="128"/>
     </resources>

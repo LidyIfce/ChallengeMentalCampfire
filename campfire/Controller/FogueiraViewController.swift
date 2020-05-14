@@ -18,7 +18,8 @@ class FogueiraViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
         if let imageName = UIImage(named: fogueiraModel.imageName){
             self.imagem.image = imageName
         }
