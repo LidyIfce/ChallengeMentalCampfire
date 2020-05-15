@@ -20,7 +20,7 @@
                             <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
                                 <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
-                                <wkPreferences key="preferences"/>
+                                <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
                             </wkWebViewConfiguration>
                         </wkWebView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Du8-h6-fbs">
@@ -31,6 +31,9 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" playsSound="YES" startsMediaSession="YES" allowsDirectInteraction="YES"/>
+                    </accessibility>
                     <constraints>
                         <constraint firstItem="dBS-uB-cAs" firstAttribute="top" secondItem="mTR-IW-iUm" secondAttribute="top" id="6Bo-ne-Yp8"/>
                         <constraint firstAttribute="trailing" secondItem="dBS-uB-cAs" secondAttribute="trailing" id="Jeu-Se-rPg"/>
@@ -43,6 +46,9 @@
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" playsSound="YES" startsMediaSession="YES" allowsDirectInteraction="YES"/>
+            </accessibility>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="mTR-IW-iUm" secondAttribute="bottom" constant="5" id="9Vz-mh-IEm"/>
                 <constraint firstItem="mTR-IW-iUm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="9pH-qK-Arl"/>

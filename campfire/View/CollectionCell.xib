@@ -11,7 +11,7 @@
         <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB" customClass="CollectionViewCell" customModule="campfire" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="176"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6b-Af-oDe">
+                <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6b-Af-oDe">
                     <rect key="frame" x="10" y="10" width="394" height="161"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aWh-hF-1fJ">
@@ -25,6 +25,9 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.59999999999999998" green="0.88235294117647056" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" playsSound="YES" startsMediaSession="YES" allowsDirectInteraction="YES"/>
+                    </accessibility>
                     <constraints>
                         <constraint firstItem="LD2-fE-vXc" firstAttribute="top" secondItem="F6b-Af-oDe" secondAttribute="top" constant="7" id="UHW-a3-b5E"/>
                         <constraint firstItem="aWh-hF-1fJ" firstAttribute="top" secondItem="F6b-Af-oDe" secondAttribute="top" constant="30" id="Uwq-Wk-V34"/>

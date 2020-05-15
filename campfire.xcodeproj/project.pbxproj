@@ -23,6 +23,12 @@
 		1924EF7C246ACD380046050F /* campfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924EF7B246ACD380046050F /* campfireTests.swift */; };
 		1924EF87246ACD380046050F /* campfireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924EF86246ACD380046050F /* campfireUITests.swift */; };
 		1924EF95246B3A7A0046050F /* Fogueira.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1924EF94246B3A7A0046050F /* Fogueira.storyboard */; };
+		1963214F246EDE55001AA394 /* MusicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963214E246EDE55001AA394 /* MusicaTableViewCell.swift */; };
+		19632155246EE625001AA394 /* musica01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19632150246EE622001AA394 /* musica01.mp3 */; };
+		19632156246EE625001AA394 /* musica05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19632151246EE623001AA394 /* musica05.mp3 */; };
+		19632157246EE625001AA394 /* musica03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19632152246EE623001AA394 /* musica03.mp3 */; };
+		19632158246EE625001AA394 /* musica04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19632153246EE624001AA394 /* musica04.mp3 */; };
+		19632159246EE625001AA394 /* musica02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19632154246EE625001AA394 /* musica02.mp3 */; };
 		1966D9CE246C1A5700D68434 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1966D9CD246C1A5700D68434 /* TabBar.storyboard */; };
 		1966D9D0246C1A6B00D68434 /* Meditacao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1966D9CF246C1A6B00D68434 /* Meditacao.storyboard */; };
 		1966D9D2246C1A7A00D68434 /* Midia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1966D9D1246C1A7A00D68434 /* Midia.storyboard */; };
@@ -88,6 +94,12 @@
 		1924EF86246ACD380046050F /* campfireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campfireUITests.swift; sourceTree = "<group>"; };
 		1924EF88246ACD380046050F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1924EF94246B3A7A0046050F /* Fogueira.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fogueira.storyboard; sourceTree = "<group>"; };
+		1963214E246EDE55001AA394 /* MusicaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaTableViewCell.swift; sourceTree = "<group>"; };
+		19632150246EE622001AA394 /* musica01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica01.mp3; sourceTree = "<group>"; };
+		19632151246EE623001AA394 /* musica05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica05.mp3; sourceTree = "<group>"; };
+		19632152246EE623001AA394 /* musica03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica03.mp3; sourceTree = "<group>"; };
+		19632153246EE624001AA394 /* musica04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica04.mp3; sourceTree = "<group>"; };
+		19632154246EE625001AA394 /* musica02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica02.mp3; sourceTree = "<group>"; };
 		1966D9CD246C1A5700D68434 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		1966D9CF246C1A6B00D68434 /* Meditacao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Meditacao.storyboard; sourceTree = "<group>"; };
 		1966D9D1246C1A7A00D68434 /* Midia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Midia.storyboard; sourceTree = "<group>"; };
@@ -235,6 +247,7 @@
 				1913587A246D8F840020D6B7 /* CollectionViewCell.swift */,
 				1913587E246DB5160020D6B7 /* RespiracaoViewController.swift */,
 				19135884246DC46D0020D6B7 /* VideoCollectionViewCell.swift */,
+				1963214E246EDE55001AA394 /* MusicaTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,6 +270,11 @@
 		1966D9FD246C3F7600D68434 /* musicas */ = {
 			isa = PBXGroup;
 			children = (
+				19632150246EE622001AA394 /* musica01.mp3 */,
+				19632154246EE625001AA394 /* musica02.mp3 */,
+				19632152246EE623001AA394 /* musica03.mp3 */,
+				19632153246EE624001AA394 /* musica04.mp3 */,
+				19632151246EE623001AA394 /* musica05.mp3 */,
 				1966DA01246C480400D68434 /* Fogueira.mp3 */,
 			);
 			path = musicas;
@@ -368,8 +386,10 @@
 			files = (
 				1966D9CE246C1A5700D68434 /* TabBar.storyboard in Resources */,
 				1913587D246DB4DA0020D6B7 /* Respiracao.storyboard in Resources */,
+				19632155246EE625001AA394 /* musica01.mp3 in Resources */,
 				1924EF95246B3A7A0046050F /* Fogueira.storyboard in Resources */,
 				1966D9DA246C1AB100D68434 /* Configuracao.storyboard in Resources */,
+				19632156246EE625001AA394 /* musica05.mp3 in Resources */,
 				1966DA02246C480400D68434 /* Fogueira.mp3 in Resources */,
 				19135871246D5C900020D6B7 /* Praticar.storyboard in Resources */,
 				1966D9D2246C1A7A00D68434 /* Midia.storyboard in Resources */,
@@ -379,8 +399,11 @@
 				1966D9D8246C1AA800D68434 /* Musica.storyboard in Resources */,
 				1966D9D4246C1A8700D68434 /* Dicas.storyboard in Resources */,
 				1966D9D6246C1A9E00D68434 /* Video.storyboard in Resources */,
+				19632158246EE625001AA394 /* musica04.mp3 in Resources */,
 				1966D9DC246C21DF00D68434 /* LaunchScreen.storyboard in Resources */,
+				19632159246EE625001AA394 /* musica02.mp3 in Resources */,
 				1924EF6E246ACD380046050F /* Assets.xcassets in Resources */,
+				19632157246EE625001AA394 /* musica03.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +441,7 @@
 				1924EF67246ACD330046050F /* SceneDelegate.swift in Sources */,
 				1913587B246D8F840020D6B7 /* CollectionViewCell.swift in Sources */,
 				1966D9E6246C247500D68434 /* DicasViewController.swift in Sources */,
+				1963214F246EDE55001AA394 /* MusicaTableViewCell.swift in Sources */,
 				1966D9F2246C253A00D68434 /* MidiaModel.swift in Sources */,
 				1913587F246DB5160020D6B7 /* RespiracaoViewController.swift in Sources */,
 				1966D9E0246C244300D68434 /* MeditacaoViewController.swift in Sources */,

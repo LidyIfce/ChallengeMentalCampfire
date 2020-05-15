@@ -14,7 +14,7 @@ class VideoViewController: UIViewController{
     @IBOutlet weak var collectionView: UICollectionView!
     
    
-    let videos = Video.getInfoVideo()
+    let videos = Video.mockVideo()
     
     override func viewDidLoad() {
         super.viewDidLoad()

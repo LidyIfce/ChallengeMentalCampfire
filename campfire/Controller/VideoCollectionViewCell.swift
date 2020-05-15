@@ -29,9 +29,7 @@ class VideoCollectionViewCell: UICollectionViewCell{
           self.webView.layer.masksToBounds = true
            self.wrapperView.layer.cornerRadius = 10
            self.wrapperView.layer.masksToBounds = true
-       
-      
-       
+ 
        }
        
        

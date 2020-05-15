@@ -15,7 +15,7 @@ struct Video{
 }
 
 extension Video{
-    static func getInfoVideo() -> [Video]{
+    static func mockVideo() -> [Video]{
         var videos = [Video]()
         videos.append(Video(url: "6C81xjBWBRQ", descricao: "Relaxamento guiado - Luz Azul"))
         videos.append(Video(url: "GgcfEkdGf1I", descricao: "Controle sua ansiedade"))
