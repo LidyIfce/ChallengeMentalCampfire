@@ -14,6 +14,9 @@
 		1913587B246D8F840020D6B7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913587A246D8F840020D6B7 /* CollectionViewCell.swift */; };
 		1913587D246DB4DA0020D6B7 /* Respiracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1913587C246DB4DA0020D6B7 /* Respiracao.storyboard */; };
 		1913587F246DB5160020D6B7 /* RespiracaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913587E246DB5160020D6B7 /* RespiracaoViewController.swift */; };
+		19135881246DC3D30020D6B7 /* VideoCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19135880246DC3D30020D6B7 /* VideoCollectionCell.xib */; };
+		19135885246DC46D0020D6B7 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19135884246DC46D0020D6B7 /* VideoCollectionViewCell.swift */; };
+		19135888246DC8FD0020D6B7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19135887246DC8FD0020D6B7 /* WebKit.framework */; };
 		1924EF65246ACD330046050F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924EF64246ACD330046050F /* AppDelegate.swift */; };
 		1924EF67246ACD330046050F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924EF66246ACD330046050F /* SceneDelegate.swift */; };
 		1924EF6E246ACD380046050F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1924EF6D246ACD380046050F /* Assets.xcassets */; };
@@ -70,6 +73,9 @@
 		1913587A246D8F840020D6B7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1913587C246DB4DA0020D6B7 /* Respiracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Respiracao.storyboard; sourceTree = "<group>"; };
 		1913587E246DB5160020D6B7 /* RespiracaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespiracaoViewController.swift; sourceTree = "<group>"; };
+		19135880246DC3D30020D6B7 /* VideoCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionCell.xib; sourceTree = "<group>"; };
+		19135884246DC46D0020D6B7 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		19135887246DC8FD0020D6B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1924EF61246ACD330046050F /* campfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1924EF64246ACD330046050F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1924EF66246ACD330046050F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19135888246DC8FD0020D6B7 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19135886246DC8FC0020D6B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19135887246DC8FD0020D6B7 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1924EF58246ACD330046050F = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +154,7 @@
 				1924EF7A246ACD380046050F /* campfireTests */,
 				1924EF85246ACD380046050F /* campfireUITests */,
 				1924EF62246ACD330046050F /* Products */,
+				19135886246DC8FC0020D6B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +216,7 @@
 				19135870246D5C900020D6B7 /* Praticar.storyboard */,
 				19135872246D6E070020D6B7 /* CollectionCell.xib */,
 				1913587C246DB4DA0020D6B7 /* Respiracao.storyboard */,
+				19135880246DC3D30020D6B7 /* VideoCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +234,7 @@
 				19135876246D72ED0020D6B7 /* PraticarViewController.swift */,
 				1913587A246D8F840020D6B7 /* CollectionViewCell.swift */,
 				1913587E246DB5160020D6B7 /* RespiracaoViewController.swift */,
+				19135884246DC46D0020D6B7 /* VideoCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -355,6 +373,7 @@
 				1966DA02246C480400D68434 /* Fogueira.mp3 in Resources */,
 				19135871246D5C900020D6B7 /* Praticar.storyboard in Resources */,
 				1966D9D2246C1A7A00D68434 /* Midia.storyboard in Resources */,
+				19135881246DC3D30020D6B7 /* VideoCollectionCell.xib in Resources */,
 				19135873246D6E070020D6B7 /* CollectionCell.xib in Resources */,
 				1966D9D0246C1A6B00D68434 /* Meditacao.storyboard in Resources */,
 				1966D9D8246C1AA800D68434 /* Musica.storyboard in Resources */,
@@ -386,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19135885246DC46D0020D6B7 /* VideoCollectionViewCell.swift in Sources */,
 				1924EF65246ACD330046050F /* AppDelegate.swift in Sources */,
 				1966D9EC246C251800D68434 /* FogueiraModel.swift in Sources */,
 				1966D9EE246C252700D68434 /* MeditacaoModel.swift in Sources */,

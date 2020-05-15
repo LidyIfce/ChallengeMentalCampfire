@@ -8,23 +8,56 @@
 
 import UIKit
 
-class VideoViewController: UIViewController {
+class VideoViewController: UIViewController{
 
+  
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+   
+    let videos = Video.getInfoVideo()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+                     
+        collectionView.register(VideoCollectionViewCell.xibForCollection(), forCellWithReuseIdentifier: VideoCollectionViewCell.identifier)
+        
+        
+    }
+
+
+}
+
+extension VideoViewController:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return videos.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.identifier, for: indexPath) as? VideoCollectionViewCell else{
+            fatalError("Wrong identifier")
+        }
+      
+        cell.descricao.text = videos[indexPath.row].descricao
+        
+        let videoUrl = URL(string: "https://www.youtube.com/embed/\(videos[indexPath.row].url)")
+        let requestVideo = URLRequest(url: videoUrl!)
+        cell.webView.load(requestVideo)
+        
+       
+        return cell
     }
-    */
-
+    
+    
+  
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    
+        return CGSize(width: view.frame.width, height: 250)
+    }
+    
+    
 }
