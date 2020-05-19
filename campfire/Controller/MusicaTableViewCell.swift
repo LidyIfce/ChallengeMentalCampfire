@@ -27,7 +27,7 @@ class MusicaTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     
-        
+      
     }
 
     
@@ -97,7 +97,7 @@ class MusicaTableViewCell: UITableViewCell {
            timer = Timer.scheduledTimer(timeInterval: 0.0001, target: self, selector: #selector(self.updatePlayer), userInfo: nil, repeats: true)
             
             imagem.layer.cornerRadius = 10
-            
+          
             
        }
 
