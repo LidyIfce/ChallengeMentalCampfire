@@ -48,12 +48,23 @@ class FogueiraModel{
            } catch  {
                 print(error)
                }
+        
+            player.volume = UserDefaults.standard.float(forKey: "changeVolume")
             return player
        }
        
         func Player() ->AVAudioPlayer{
            SetupPlayer(nome: "Fogueira", formato: "mp3")
        }
+    
+    
+     func checkAudio() -> Bool {
+        if UserDefaults.standard.bool(forKey: "activeSound") == true {
+            return true
+        } else {
+            return false
+        }
+    }
         
 }
 

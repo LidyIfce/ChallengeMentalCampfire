@@ -25,15 +25,22 @@ class FogueiraViewController: UIViewController {
         }
         self.frase.text = fogueiraModel.frase
         
-        fogueiraModel.Player().play()
+        if(fogueiraModel.checkAudio()){
+            fogueiraModel.Player().play()
+        }
     }
 
     override func viewDidDisappear(_ animated: Bool) {
-        fogueiraModel.Player().pause()
+        
+        if(fogueiraModel.Player().isPlaying){
+            fogueiraModel.Player().play()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        fogueiraModel.Player().play()
+        if(fogueiraModel.checkAudio()){
+            fogueiraModel.Player().play()
+        }
     }
    
    

@@ -40,7 +40,6 @@
 		1966D9DE246C241B00D68434 /* FogueiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9DD246C241B00D68434 /* FogueiraViewController.swift */; };
 		1966D9E0246C244300D68434 /* MeditacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9DF246C244300D68434 /* MeditacaoViewController.swift */; };
 		1966D9E2246C245800D68434 /* MidiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9E1246C245800D68434 /* MidiaViewController.swift */; };
-		1966D9E4246C246900D68434 /* ConfiguracaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9E3246C246900D68434 /* ConfiguracaoViewController.swift */; };
 		1966D9E6246C247500D68434 /* DicasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9E5246C247500D68434 /* DicasViewController.swift */; };
 		1966D9E8246C248800D68434 /* MusicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9E7246C248800D68434 /* MusicaViewController.swift */; };
 		1966D9EA246C249200D68434 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9E9246C249200D68434 /* VideoViewController.swift */; };
@@ -52,6 +51,7 @@
 		1966D9F6246C254E00D68434 /* MusicaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9F5246C254E00D68434 /* MusicaModel.swift */; };
 		1966D9F8246C255D00D68434 /* ConfiguracaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9F7246C255D00D68434 /* ConfiguracaoModel.swift */; };
 		1966DA02246C480400D68434 /* Fogueira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1966DA01246C480400D68434 /* Fogueira.mp3 */; };
+		1977B59A247414B800D6A91B /* ConfiguracaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1977B599247414B800D6A91B /* ConfiguracaoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +111,6 @@
 		1966D9DD246C241B00D68434 /* FogueiraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FogueiraViewController.swift; sourceTree = "<group>"; };
 		1966D9DF246C244300D68434 /* MeditacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeditacaoViewController.swift; path = campfire/View/MeditacaoViewController.swift; sourceTree = SOURCE_ROOT; };
 		1966D9E1246C245800D68434 /* MidiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaViewController.swift; sourceTree = "<group>"; };
-		1966D9E3246C246900D68434 /* ConfiguracaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracaoViewController.swift; sourceTree = "<group>"; };
 		1966D9E5246C247500D68434 /* DicasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicasViewController.swift; sourceTree = "<group>"; };
 		1966D9E7246C248800D68434 /* MusicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaViewController.swift; sourceTree = "<group>"; };
 		1966D9E9246C249200D68434 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		1966D9F5246C254E00D68434 /* MusicaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaModel.swift; sourceTree = "<group>"; };
 		1966D9F7246C255D00D68434 /* ConfiguracaoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracaoModel.swift; sourceTree = "<group>"; };
 		1966DA01246C480400D68434 /* Fogueira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fogueira.mp3; sourceTree = "<group>"; };
+		1977B599247414B800D6A91B /* ConfiguracaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracaoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +238,6 @@
 			children = (
 				1966D9DF246C244300D68434 /* MeditacaoViewController.swift */,
 				1966D9E1246C245800D68434 /* MidiaViewController.swift */,
-				1966D9E3246C246900D68434 /* ConfiguracaoViewController.swift */,
 				1966D9E5246C247500D68434 /* DicasViewController.swift */,
 				1966D9E7246C248800D68434 /* MusicaViewController.swift */,
 				1966D9E9246C249200D68434 /* VideoViewController.swift */,
@@ -248,6 +247,7 @@
 				1913587E246DB5160020D6B7 /* RespiracaoViewController.swift */,
 				19135884246DC46D0020D6B7 /* VideoCollectionViewCell.swift */,
 				1963214E246EDE55001AA394 /* MusicaTableViewCell.swift */,
+				1977B599247414B800D6A91B /* ConfiguracaoTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -445,8 +445,8 @@
 				1966D9F2246C253A00D68434 /* MidiaModel.swift in Sources */,
 				1913587F246DB5160020D6B7 /* RespiracaoViewController.swift in Sources */,
 				1966D9E0246C244300D68434 /* MeditacaoViewController.swift in Sources */,
-				1966D9E4246C246900D68434 /* ConfiguracaoViewController.swift in Sources */,
 				1966D9E8246C248800D68434 /* MusicaViewController.swift in Sources */,
+				1977B59A247414B800D6A91B /* ConfiguracaoTableViewController.swift in Sources */,
 				1966D9F6246C254E00D68434 /* MusicaModel.swift in Sources */,
 				19135877246D72ED0020D6B7 /* PraticarViewController.swift in Sources */,
 				1966D9DE246C241B00D68434 /* FogueiraViewController.swift in Sources */,
