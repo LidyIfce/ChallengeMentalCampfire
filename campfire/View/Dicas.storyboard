@@ -7,20 +7,61 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dicas View Controller-->
+        <!--Dicas-->
         <scene sceneID="S20-ar-SLd">
             <objects>
                 <viewController id="WbO-Xu-qPa" customClass="DicasViewController" customModule="campfire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o4D-ct-qVp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iT3-8O-PG3">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iT3-8O-PG3" firstAttribute="top" secondItem="uRM-te-KR4" secondAttribute="top" id="Doz-BA-L7u"/>
+                            <constraint firstItem="iT3-8O-PG3" firstAttribute="leading" secondItem="uRM-te-KR4" secondAttribute="leading" id="Goy-nZ-qtD"/>
+                            <constraint firstItem="uRM-te-KR4" firstAttribute="bottom" secondItem="iT3-8O-PG3" secondAttribute="bottom" id="QU2-Xd-MC5"/>
+                            <constraint firstItem="uRM-te-KR4" firstAttribute="trailing" secondItem="iT3-8O-PG3" secondAttribute="trailing" id="YQa-WA-Hm9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uRM-te-KR4"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Dicas" id="3Ir-BN-CUJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="iT3-8O-PG3" id="JOQ-0s-64G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wK-8u-H70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="77"/>
+            <point key="canvasLocation" x="776.81159420289862" y="76.339285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vBu-HN-HYA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avY-TL-EtC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="fYZ-h1-jWG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.95294117649999999" green="0.90980392160000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WbO-Xu-qPa" kind="relationship" relationship="rootViewController" id="qqS-CR-7VN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b00-C9-Tpf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133.33333333333334" y="76.339285714285708"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
 </document>

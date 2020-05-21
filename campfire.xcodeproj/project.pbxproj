@@ -52,6 +52,8 @@
 		1966D9F8246C255D00D68434 /* ConfiguracaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D9F7246C255D00D68434 /* ConfiguracaoModel.swift */; };
 		1966DA02246C480400D68434 /* Fogueira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1966DA01246C480400D68434 /* Fogueira.mp3 */; };
 		1977B59A247414B800D6A91B /* ConfiguracaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1977B599247414B800D6A91B /* ConfiguracaoTableViewController.swift */; };
+		19AC8B842475AD3400186CEF /* DicasTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19AC8B832475AD3400186CEF /* DicasTableViewCell.xib */; };
+		19AC8B862475BFF700186CEF /* DicasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AC8B852475BFF700186CEF /* DicasTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,8 @@
 		1966D9F7246C255D00D68434 /* ConfiguracaoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracaoModel.swift; sourceTree = "<group>"; };
 		1966DA01246C480400D68434 /* Fogueira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fogueira.mp3; sourceTree = "<group>"; };
 		1977B599247414B800D6A91B /* ConfiguracaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracaoTableViewController.swift; sourceTree = "<group>"; };
+		19AC8B832475AD3400186CEF /* DicasTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DicasTableViewCell.xib; sourceTree = "<group>"; };
+		19AC8B852475BFF700186CEF /* DicasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicasTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +233,7 @@
 				19135872246D6E070020D6B7 /* CollectionCell.xib */,
 				1913587C246DB4DA0020D6B7 /* Respiracao.storyboard */,
 				19135880246DC3D30020D6B7 /* VideoCollectionCell.xib */,
+				19AC8B832475AD3400186CEF /* DicasTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 				19135884246DC46D0020D6B7 /* VideoCollectionViewCell.swift */,
 				1963214E246EDE55001AA394 /* MusicaTableViewCell.swift */,
 				1977B599247414B800D6A91B /* ConfiguracaoTableViewController.swift */,
+				19AC8B852475BFF700186CEF /* DicasTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -394,6 +400,7 @@
 				19135871246D5C900020D6B7 /* Praticar.storyboard in Resources */,
 				1966D9D2246C1A7A00D68434 /* Midia.storyboard in Resources */,
 				19135881246DC3D30020D6B7 /* VideoCollectionCell.xib in Resources */,
+				19AC8B842475AD3400186CEF /* DicasTableViewCell.xib in Resources */,
 				19135873246D6E070020D6B7 /* CollectionCell.xib in Resources */,
 				1966D9D0246C1A6B00D68434 /* Meditacao.storyboard in Resources */,
 				1966D9D8246C1AA800D68434 /* Musica.storyboard in Resources */,
@@ -450,6 +457,7 @@
 				1966D9F6246C254E00D68434 /* MusicaModel.swift in Sources */,
 				19135877246D72ED0020D6B7 /* PraticarViewController.swift in Sources */,
 				1966D9DE246C241B00D68434 /* FogueiraViewController.swift in Sources */,
+				19AC8B862475BFF700186CEF /* DicasTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
